@@ -1,0 +1,131 @@
+ship "Transport" "Transport (prologue)"
+	outfits
+		"18in Kinetic Turret"
+		"18in Round" 100
+
+		"NT-200 Nucleovoltaic"
+		"KP-6 Photovoltaic Panel" 2
+		"LP072a Battery Pack"
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+
+ship "Transport" "Transport (heavy prologue)"
+	outfits
+		"22in Kinetic Turret"
+		"22in Round" 100
+
+		"NT-200 Nucleovoltaic"
+		"KP-6 Photovoltaic Panel" 2
+		"LP072a Battery Pack"
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+
+ship "Cargo" "Cargo (prologue)"
+	outfits
+		"18in Kinetic Turret" 3
+		"18in Round" 300
+
+		"NT-200 Nucleovoltaic"
+		"KP-6 Photovoltaic Panel" 2
+		"LP072a Battery Pack"
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+
+ship "Cargo" "Cargo (heavy prologue)"
+	outfits
+		"22in Kinetic Turret" 3
+		"22in Round" 300
+
+		"NT-200 Nucleovoltaic"
+		"KP-6 Photovoltaic Panel" 2
+		"LP072a Battery Pack"
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+
+
+fleet "Prologue Imperial Fleet"
+	government "Rexus (Imperial)"
+	names "civilian"
+	cargo 1
+	personality
+		confusion 15
+		heroic
+	variant 10
+		"Transport (prologue)"
+	variant 10
+		"Transport (heavy prologue)"
+	variant 10
+		"Cargo (prologue)"
+	variant 10
+		"Cargo (heavy prologue)"
+	variant 5
+		"Cargo (prologue)"
+		"Transport (prologue)"
+	variant 5
+		"Cargo (heavy prologue)"
+		"Transport (prologue)"
+	variant 5
+		"Cargo (prologue)"
+		"Transport (heavy prologue)"
+	variant 5
+		"Cargo (heavy prologue)"
+		"Transport (heavy prologue)"
+	variant 5
+		"Cargo (prologue)"
+		"Cargo (prologue)"
+	variant 5
+		"Cargo (heavy prologue)"
+		"Cargo (heavy prologue)"
+	variant 5
+		"Transport (heavy prologue)"
+		"Transport (heavy prologue)"
+
+	variant 5
+		"Transport (prologue)"
+		"Transport (prologue)"
+
+fleet "Prologue Junta Fleet"
+	government "Rexus (Junta)"
+	names "civilian"
+	cargo 1
+	personality
+		confusion 15
+		heroic
+	variant 10
+		"Transport (prologue)"
+	variant 10
+		"Transport (heavy prologue)"
+	variant 10
+		"Cargo (prologue)"
+	variant 10
+		"Cargo (heavy prologue)"
+	variant 5
+		"Cargo (prologue)"
+		"Transport (prologue)"
+	variant 5
+		"Cargo (heavy prologue)"
+		"Transport (prologue)"
+	variant 5
+		"Cargo (prologue)"
+		"Transport (heavy prologue)"
+	variant 5
+		"Cargo (heavy prologue)"
+		"Transport (heavy prologue)"
+	variant 5
+		"Cargo (prologue)"
+		"Cargo (prologue)"
+	variant 5
+		"Cargo (heavy prologue)"
+		"Cargo (heavy prologue)"
+	variant 5
+		"Transport (heavy prologue)"
+		"Transport (heavy prologue)"
+
+	variant 5
+		"Transport (prologue)"
+		"Transport (prologue)"
+

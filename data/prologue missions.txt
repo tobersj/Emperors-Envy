@@ -1,0 +1,252 @@
+mission "Prologue - delivery"
+	landing
+	name "Deliver Deuterium to <planet>"
+	description "Travel your new ship to <destination>, and deliver <cargo>."
+	cargo deuterium 100
+	source "Urath"
+	destination "Delta Station"
+	to offer
+		set "prologue start"
+	on offer
+		conversation
+			`You are given the order to take Deuterium to Delta Station so they can finish work on a new type of engine.`
+				accept
+	
+	on complete
+		"reputation: Rexus (Imperial)" += 100
+		"reputation: Rexus (Junta)" -= 1000
+	on abort
+		dialog "You have aborted a vital story mission."
+
+
+mission "Prologue - treachery"
+	landing
+	name "Defeat the Imperial Forces"
+	description "Defeat the Imperial space fleet in the skies, then land on Urath."
+	source "Kawaza"
+	destination "Urath"
+	clearance
+	to offer
+		has "Prologue - delivery: active"
+	
+	on offer
+		conversation
+			`You fly around Kawaza, a planet that has held much mythological meaning for your people. As you make your scans, a small fleet approaches you, and you receive a message with only two things: the Junta emblem and coordinates to land on. What do you do?.`
+			choice
+				`	[Land]`
+					goto "landed"
+				`	[Fly away]`
+					goto "fly"
+				`	[Fight]`
+					goto "fight"
+			label landed
+			action
+				fail "Prologue - delivery"
+			`	You land, and the Junta crew walk out in their hazard suits. Before you can get your hazard suit on and leave the station, the Junta men have already taken all the Deuterium from your storage. The Junta thank you for your time, and explain that there will be a fleet attacking Urath. The Empire fleet will be sure to attack you for this treachery (whether it was intended or not is beside the point), so your only help of survival now is to attack with the Junta Fleet.`
+				accept
+			label fly
+			`	You fly away, and due to the dense atmosphere of Kawaza, lose your pursuers.`
+				depart
+			label fight
+			`	You charge towards the incoming fleet and set your cannon to fire... but a hail of bullets tears your ship apart.`
+				explode
+	on accept
+				"reputation: Rexus (Junta)" += 100
+				"reputation: Rexus (Imperial)" -= 1000
+				clear "salary: RSP"
+	npc
+		system Korva
+		personality escort
+		government "Rexus (Junta)"
+		fleet "Prologue Imperial Fleet" 2
+	npc
+		system Korva
+		personality heroic uninterested staying
+		government "Rexus (Junta)"
+		fleet "Prologue Imperial Fleet" 7
+	npc evade
+		system Korva
+		personality heroic uninterested staying
+		government "Rexus (Imperial)"
+		fleet "Prologue Imperial Fleet" 5
+
+	on visit
+		dialog `You've landed on <planet>, but there are still enemy ships circling overhead. You should take off and help finish them off.`
+	on complete
+		set "global: EE prologue junta victory"
+		clear "global: EE prologue imperial victory"
+		event "junta prologue victory" 0
+		dialog `The Junta forces quickly get to work, and soon they have captured the Emperor himself. Now the Clans that formed the Junta have taken control of Urath, and the fate of the Rexan Nation shall forever be changed. By the time the festivities are over, you are sent back to Kawaza for a secret project.`
+		payment 10000
+		"salary: Junta" += 750
+
+
+event "junta prologue victory"
+	planet Kawaza
+		government "Rexus (Junta)"
+	planet Urath
+		government "Rexus (Junta)"
+
+
+
+mission "Prologue - glorious purpose"
+	landing
+	name "Defeat the Junta Forces"
+	description "Defeat the Junta space fleet in the skies, then land on Urath."
+	source "Delta Station"
+	destination "Urath"
+	to offer
+		or
+			has "Prologue - delivery: active"
+			has "Prologue - delivery: done"
+	
+	on offer
+		conversation
+			`You drop off the shipment of <commodity> on <planet>. You are told to return to Urath for your next mission.`
+				accept
+	on enter
+		dialog "Junta forces have launched a surprise attack on Urath! Defeat these rebel forces before they jeopardise Rexan dreams of a prosperous future!"
+	on accept
+				"reputation: Rexus (Imperial)" += 100
+				"reputation: Rexus (Junta)" -= 1000
+	npc
+		system Korva
+		personality escort
+		government "Rexus (Imperial)"
+		fleet "Prologue Imperial Fleet" 2
+	npc
+		system Korva
+		personality heroic uninterested staying
+		government "Rexus (Imperial)"
+		fleet "Prologue Imperial Fleet" 7
+	npc evade
+		system Korva
+		personality heroic uninterested staying
+		government "Rexus (Junta)"
+		fleet "Prologue Imperial Fleet" 5
+
+	on visit
+		dialog `You've landed on <planet>, but there are still enemy ships circling overhead. You should take off and help finish them off.`
+	on complete
+		clear "global: EE prologue junta victory"
+		set "global: EE prologue imperial victory"
+		dialog "The future of the Rexan nation is secure thanks to your valiant effort. The Emperor personally shakes your hand. By the time the festivities are over, you are sent back to Delta Station for a secret project."
+
+mission "Prologue - imperial slipdrive"
+	name "Explore the Stars!"
+	description "Now you have a hyperdrive, explore stars neighbouring the Korva system."
+	landing
+	source "Delta Station"
+	waypoint "Holdford"
+	waypoint "Vestford"
+	to offer
+		has "Prologue - glorious purpose: done"
+	on offer
+		outfit "Slipdrive" 1
+		event "prologue exploration" 0
+		conversation
+			`You land on Delta Station, and are directed to a secret room. You find out that this place is a facility to develop FTL drives, not just ordinary engines. One is being installed on your ship, and it is now your mission to be the first Rexan to leave the Korva system! The coordinates for the nearest stars are being uploaded to your ship. If initial scans indicate that a planet might be a Planet of Interest, land there to make further scans.`
+				accept
+	on enter "Holdford"
+		dialog 
+			`You are the first Rexan, and possibly the first sapient life, to enter this the Holdford system. In years past, the Seers called this the First Brother, because it was the first star in the night's sky they were said to transcend to. You take in sights, and the first scans came through. There is a planet here with unusual readings, a planet astronomers have marked as "Casea". You will need to land there to continue your mission.`
+	on enter "Vestford"
+		conversation 
+			`The sun here is tiny, a dwarf star barely bigger than a gas giant. Yet, it is enough for the few objects that orbit it. It seems strange that you should be here, with a sun so small, so alien, as this one. The scans come back. One thought is occupies your mind:`
+			choice
+				`	Glory to Rexus!`
+				`	The stars are our birthright!`
+				`	The Seers truly had to the truest sight...`
+				`	A new age for Urath has begun...`
+				`	This is underwhelming.`
+			`	The scans come back. There is a single landable planet here, but there is nothing of interest on it.`
+
+mission "Prologue - junta slipdrive"
+	name "Explore the Stars!"
+	description "Now you have a hyperdrive, explore stars neighbouring the Korva system."
+	landing
+	source "Kawaza"
+	waypoint "Holdford"
+	waypoint "Vestford"
+	to offer
+		has "Prologue - treachery: done"
+	on offer
+		outfit "Slipdrive" 1
+		event "prologue exploration" 0
+		conversation
+			`You land on the same landing platform on Kawaza, and are directed to a secret room. You find out that the Junta's Technocrats have been able to steal designs to develop FTL drives, which they have now been able to make due to the extra deuterium you delivered. A "Slipdrive" as they call it is being install on your ship as you speak, and it is now your mission to be the first Rexan to leave the Korva system! The coordinates for the nearest stars are being uploaded to your ship. If initial scans indicate that a planet might be a Planet of Interest, land there to make further scans.`
+				accept
+	on enter "Holdford"
+		dialog 
+			`You are the first Rexan, and possibly the first sapient life, to enter this the Holdford system. In years past, the Seers called this the First Brother, because it was the first star in the night's sky they were said to transcend to. You take in sights, and the first scans came through. There is a planet here with unusual readings, a planet astronomers have marked as "Casea". You will need to land there to continue your mission.`
+	on enter "Vestford"
+		conversation 
+			`The sun here is tiny, a dwarf star barely bigger than a gas giant. Yet, it is enough for the few objects that orbit it. It seems strange that you should be here, with a sun so small, so alien, as this one. The scans come back. One thought is occupies your mind:`
+			choice
+				`	Glory to Rexus!`
+				`	The stars are our birthright!`
+				`	The Seers truly had to the truest sight...`
+				`	A new age for Urath has begun...`
+				`	This is underwhelming.`
+			`	The scans come back. There is a single landable planet here, but there is nothing of interest on it.`
+
+
+event "prologue exploration"
+		link Korva Holdford
+		link Korva Vestford
+
+mission "Prologue - end"
+	name "Return to Urath"
+	description "After the discovery on Casea, return to Urath to hand in your findings."
+	landing
+	source "Casea"
+	destination "Urath"
+	on offer
+		set "global: EE prologue complete"
+		conversation
+			`You enter low orbit around Casea, and pilot your ship around. Soon you find a something peculiar: radiation that can only be caused by artificial industrial action. You pilot your ship to centre of the phenomenon and enter the atmosphere. You find that there is a concrete structure, with a series of small towers rising from the ground.`
+			choice
+				`	[Run seismic scans]`
+					goto SS
+				`	[Run PenRad scans]`
+					goto PRS
+			label SS
+			`	While it may not be as precise, You deploy a Seismic drone to generate a 3D image of the underground structure, knowing that it will be less likely to arouse suspicion.`
+				goto "3D image"
+			label PRS
+			`	Despite the fact that a deep radiation scan is far more detectable, you deploy your ship's Penetrative Radiation scanners. The radiation penetrates the surface, then the different types of radiation bounce back to the ship at different rates.`
+			label "3D image"
+			`	Before long a 3D image of the underground structure appears. You struggle to comprehend what you are seeing. You decided you need to go down and explore the bunker for yourself. You land your ship, and come up to a terminal. The camera next to the terminal scans your eyes, and it automatically displays in the Rexan language. You look through the machine, and find a database with millions of data points. You try to open the information on "Project Doomsday", and accidentally set of a timer. You only have 30 minutes but before you run to your ship, to plug in a datachip, and download as much of data as as possible. After 15 minutes, you start to feel rumbling, and pull out the data chip after downloading 90%. You run to your ship, and escape the facility.`
+				launch
+	on enter Holdford
+		dialog
+			`You begin a steep climb, and break through the atmosphere. 15 minutes pass and soon an explosion shrouds the base in fire and heat. Planetary scans showed signs a seismic shock, and LiDAR scans only show a crater. All receivers are silent.`
+	on enter Korva
+		conversation
+			`You make it through to the Korva system, and immediately send off a communications drone to Urath. The drone reaches the designated spot to transmit data, and makes contact with Urath. You send a single message, "Information: Urgent", and start transmitting the data you found. But just as the first data line is sent to Urath, something the size of a pebble moving faster than light smashes into the cockpit of your ship, and the last thing you experience is the heat of the explosion.`
+				explode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+

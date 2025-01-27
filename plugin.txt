@@ -1,0 +1,2 @@
+name "Emperor's Envy - Prologue Pre-Alpa"
+about `First public release - contains the missions for the prologue, and basic ships and weapons for a refocused combat. Text and Graphics are placeholder.`
