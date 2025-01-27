@@ -6,6 +6,9 @@ Currently this only features the prologue, but I hope to add branching stories.
 
 Please do let me know if you have any feeback!
 
+I created this plugin with my UI plugin "Central-HUD" in mind, though it is not neccisary:
+https://github.com/tobersj/Central-HUD
+
 ## TO DO:
 
 1. Replace vanilla outfits being used by ships
