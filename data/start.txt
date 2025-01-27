@@ -1,0 +1,85 @@
+start "0. Prologue"
+	name "0. Prologue Pre-Alpha"
+	description `This is the story of how the Rexan nation first left her home system...`
+	thumbnail "scene/lobby"
+	date 7 3 2406
+	system "Korva"
+	planet "Urath"
+	conversation "prologue intro"
+	account
+		credits 1000
+		score 400
+		mortgage Mortgage
+			principal 0
+			interest 0
+			term 0
+	#set "license: Urath Ouranaut" #Ouranaut comes from the Greek "Ourania" + "Nantes", lit. "Heavens Sailer".
+
+
+
+conversation "prologue intro"
+	`You are the newest member of the Rexan Space Program (RSP). Traditionally, only the Seers were able to penetrate the clouds and send their minds forth to worlds and stars untold. But now  you can too (etc...).`
+	name
+	action
+		give ship "Transport (prologue)" "Emperor's Envy"
+		event "prologue settings" 0
+		"salary: RSP" += 750
+		set "prologue start"
+
+
+event "prologue settings"
+	clear "global: EE prologue complete"
+	planet Urath
+		shipyard clear
+		outfitter clear
+		description `Urath is home to a multitude of nations, however Rexus is the only space-faring nation. Rexus is lead by an Emperor, but there are many warlords and technocrats looking to replace him; it is said that a coalition, called the "Junta", managed to leave Urath, and are plotting their revenge. Natives of Urath are called Urathi, citizens of Rexus are called Rexan.`
+	unlink Korva Holdford
+	unlink Korva Vestford
+	unlink Korva Grasp
+	unlink Vestford Algaman
+	unlink Vestford Casarii
+	unlink Holdford Casarii
+	unlink Holdford "Seer's Star"
+
+start "Pre-Alpha Test"
+	name "Pre-Alpha Test"
+	description `This is the story of how the Rexan nation first left her home system...`
+	thumbnail "scene/lobby"
+	date 7 3 2406
+	system "Korva"
+	planet "Urath"
+	conversation "pre-alpha test"
+	account
+		credits 10000000000000
+		score 400
+		mortgage Mortgage
+			principal 0
+			interest 0
+			term 0
+	#set "license: Urath Ouranaut" #Ouranaut comes from the Greek "Ourania" + "Nantes", lit. "Heavens Sailer".
+
+
+
+conversation "pre-alpha test"
+	`You are the newest member of the Rexan Space Program (RSP). Traditionally, only the Seers were able to penetrate the clouds and send their minds forth to worlds and stars untold. But now  you can too (etc...).`
+	name
+	action
+		event "pre-alpha settings" 0
+
+
+event "pre-alpha settings"
+	system Korva
+		fleet "Small Imperial Fleet" 600
+		fleet "Medium Imperial Fleet" 600
+		fleet "Large Imperial Fleet" 600
+		fleet "Small Junta Fleet" 600
+		fleet "Medium Junta Fleet" 600
+		fleet "Large Junta Fleet" 600
+		fleet "Small Raider Fleet" 600
+		fleet "Medium Raider Fleet" 600
+		fleet "Large Raider Fleet" 600
+
+
+
+
+

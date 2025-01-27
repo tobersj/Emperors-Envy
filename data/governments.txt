@@ -1,0 +1,27 @@
+government "Rexus (Imperial)"
+	"display name" "Rexus (Empire)"
+	swizzle 26
+	color 0.971 1 0
+	"player reputation" 0
+	"crew attack" 1.5
+	"crew defense" 1.5
+
+government "Rexus (Junta)"
+	swizzle 8
+	color 0.013 0.667 0.244
+	"player reputation" 0
+	"crew attack" 2
+	"crew defense" 1
+	"attitude toward"
+		"Rexus (Imperial)" -1000
+
+government Raider
+	swizzle 6
+	color 0.515 0 0
+	"player reputation" -100
+	"crew attack" 1.7
+	"crew defense" 1.4
+	"attitude toward"
+		"Rexus (Imperial)" -1000
+		"Rexus (Junta)" -1000
+

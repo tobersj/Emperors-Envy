@@ -1,0 +1,550 @@
+outfit "10in Round"
+	category "Ammunition"
+	cost 1
+	thumbnail "outfit/bullet"
+	"mass" .001
+	"10in round capacity" -1
+	description "This is is a round used in 10 inch point defence systems."
+
+outfit "10in Containers"
+	plural "10in Containers"
+	category "Ammunition"
+	cost 5000
+	thumbnail "outfit/bullet storage"
+	"mass" 1
+	"outfit space" -5
+	"10in round capacity" 2000
+	ammo "10in Round"
+	description "Used to store 10 inch rounds."
+
+
+outfit "10in Point Defence"
+	category "Turrets"
+	cost 20000
+	thumbnail "outfit/anti-missile"
+	"mass" 7
+	"outfit space" -10
+	"weapon capacity" -10
+	"turret mounts" -1
+	"10in round capacity" 200
+	weapon
+		"hardpoint sprite" "hardpoint/10in pd"
+		"hit effect" "10in pd"
+		"anti-missile" 10
+		"velocity" 150
+		"lifetime" 1
+		"reload" 10
+		ammo "10in Round" 1
+		"firing energy" 0.2
+		"firing heat" 5
+	description "Standard point defence system used by the Imperial spacecraft."
+
+effect "10in pd"
+	sprite "effect/small anti missile"
+		"no repeat"
+		"frame rate" 3
+	sound "anti-missile"
+	"lifetime" 21
+	"velocity scale" 1
+
+outfit "18in Round"
+	category "Ammunition"
+	cost 2
+	thumbnail "outfit/bullet"
+	"mass" .002
+	"18in round capacity" -1
+	description "This is is a round used to fire 18 inch sized guns."
+
+outfit "18inbullet"
+	weapon
+		sprite "projectile/18inbullet"
+			"delay" 5
+			"random start frame"
+			"frame rate" 0
+		"random velocity" 8
+		"lifetime" 50
+		"shield damage" 30
+		"hull damage" 120
+		"hit force" 10
+		"hit effect" "bullet impact"
+
+outfit "18in Containers"
+	plural "18in Containers"
+	category "Ammunition"
+	cost 10000
+	thumbnail "outfit/bullet storage"
+	"mass" 2
+	"outfit space" -5
+	"18in round capacity" 500
+	ammo "18in Round"
+	description "Used to store 18 inch rounds."
+
+outfit "18in Kinetic Turret"
+	category "Turrets"
+	cost 50000
+	thumbnail "outfit/gat turret"
+	"mass" 7
+	"outfit space" -10
+	"weapon capacity" -10
+	"turret mounts" -1
+	"required crew" 1
+	"18in round capacity" 100
+	weapon
+		sound "gatling"
+		sprite "projectile/tinyflare"
+			"random start frame"
+		"hardpoint sprite" "hardpoint/single 18in"
+		"submunition" "18inbullet"
+			"offset" 0 -6
+		ammo "18in Round" 1
+		"inaccuracy" 2
+		"turret turn" 6
+		"velocity" 16
+		"lifetime" 1
+		"reload" 60
+		"firing energy" 10
+		"firing heat" 25
+		"stream"
+		"hit effect" "bullet impact"
+	description `The standard weapon of the Imperial spacecraft.`
+
+outfit "18in Kinetic Turret Double"
+	category "Turrets"
+	cost 120000
+	thumbnail "outfit/gat turret"
+	"mass" 15
+	"outfit space" -23
+	"weapon capacity" -23
+	"turret mounts" -1
+	"required crew" 1
+	"18in round capacity" 100
+	weapon
+		sound "gatling"
+		sprite "projectile/tinyflare"
+			"random start frame"
+		"hardpoint sprite" "hardpoint/dual 18in"
+		"submunition" "18inbullet"
+			"offset" 0 -6
+		ammo "18in Round" 1
+		"inaccuracy" 2
+		"turret turn" 6
+		"velocity" 16
+		"lifetime" 1
+		"reload" 45
+		"firing energy" 10
+		"firing heat" 25
+		"stream"
+		"hit effect" "bullet impact"
+	description `The standard weapon of the Imperial spacecraft.`
+
+outfit "18in Kinetic Turret Triple"
+	category "Turrets"
+	cost 200000
+	thumbnail "outfit/gat turret"
+	"mass" 20
+	"outfit space" -35
+	"weapon capacity" -35
+	"turret mounts" -1
+	"required crew" 1
+	"18in round capacity" 100
+	weapon
+		sound "gatling"
+		sprite "projectile/tinyflare"
+			"random start frame"
+		"hardpoint sprite" "hardpoint/triple 18in"
+		"submunition" "18inbullet"
+			"offset" 0 -6
+		ammo "18in Round" 1
+		"inaccuracy" 2
+		"turret turn" 6
+		"velocity" 16
+		"lifetime" 1
+		"reload" 20
+		"firing energy" 10
+		"firing heat" 25
+		"stream"
+		"hit effect" "bullet impact"
+	description `The standard weapon of the Imperial spacecraft.`
+
+
+outfit "22in Round"
+	category "Ammunition"
+	cost 4
+	thumbnail "outfit/bullet"
+	"mass" .003
+	"22in round capacity" -1
+	description "This is is a round used to fire 22 inch sized guns."
+
+outfit "22inbullet"
+	weapon
+		sprite "projectile/22inbullet"
+			"delay" 5
+			"random start frame"
+			"frame rate" 0
+		"random velocity" 8
+		"lifetime" 60
+		"shield damage" 60
+		"hull damage" 150
+		"hit force" 20
+		"hit effect" "bullet impact"
+
+outfit "22in Containers"
+	plural "18in Containers"
+	category "Ammunition"
+	cost 10000
+	thumbnail "outfit/bullet storage"
+	"mass" 5
+	"outfit space" -7
+	"22in round capacity" 500
+	ammo "22in Round"
+	description "Used to store 22 inch rounds."
+
+outfit "22in Kinetic Turret"
+	category "Turrets"
+	cost 75000
+	thumbnail "outfit/gat turret"
+	"mass" 15
+	"outfit space" -20
+	"weapon capacity" -20
+	"turret mounts" -1
+	"required crew" 1
+	"22in round capacity" 100
+	weapon
+		sound "gatling"
+		sprite "projectile/tinyflare"
+			"random start frame"
+		"hardpoint sprite" "hardpoint/single 22in"
+		"submunition" "22inbullet"
+			"offset" 0 -6
+		ammo "22in Round" 1
+		"inaccuracy" 2
+		"turret turn" 4.5
+		"velocity" 16
+		"lifetime" 1
+		"reload" 60
+		"firing energy" 14
+		"firing heat" 35
+		"stream"
+		"hit effect" "bullet impact"
+	description `The standard weapon of the Imperial spacecraft.`
+
+outfit "22in Kinetic Turret Double"
+	category "Turrets"
+	cost 160000
+	thumbnail "outfit/gat turret"
+	"mass" 20
+	"outfit space" -45
+	"weapon capacity" -45
+	"turret mounts" -1
+	"required crew" 1
+	"22in round capacity" 100
+	weapon
+		sound "gatling"
+		sprite "projectile/tinyflare"
+			"random start frame"
+		"hardpoint sprite" "hardpoint/dual 22in"
+		"submunition" "22inbullet"
+			"offset" 0 -6
+		ammo "22in Round" 1
+		"inaccuracy" 2
+		"turret turn" 4.5
+		"velocity" 16
+		"lifetime" 1
+		"reload" 45
+		"firing energy" 14
+		"firing heat" 35
+		"stream"
+		"hit effect" "bullet impact"
+	description `The standard weapon of the Imperial spacecraft.`
+
+outfit "22in Kinetic Turret Triple"
+	category "Turrets"
+	cost 250000
+	thumbnail "outfit/gat turret"
+	"mass" 25
+	"outfit space" -70
+	"weapon capacity" -70
+	"turret mounts" -1
+	"required crew" 1
+	"22in round capacity" 100
+	weapon
+		sound "gatling"
+		sprite "projectile/tinyflare"
+			"random start frame"
+		"hardpoint sprite" "hardpoint/triple 22in"
+		"submunition" "22inbullet"
+			"offset" 0 -6
+		ammo "22in Round" 1
+		"inaccuracy" 2
+		"turret turn" 5
+		"velocity" 16
+		"lifetime" 1
+		"reload" 20
+		"firing energy" 14
+		"firing heat" 35
+		"stream"
+		"hit effect" "bullet impact"
+	description `The standard weapon of the Imperial spacecraft.`
+
+outfit "30in Round"
+	category "Ammunition"
+	cost 10
+	thumbnail "outfit/bullet"
+	"mass" .006
+	"30in round capacity" -1
+	description "This is is a round used to fire 30 inch sized guns."
+
+outfit "30inbullet"
+	weapon
+		sprite "projectile/30inbullet"
+			"delay" 5
+			"random start frame"
+			"frame rate" 0
+		"random velocity" 8
+		"lifetime" 80
+		"shield damage" 150
+		"hull damage" 200
+		"hit force" 30
+		"hit effect" "bullet impact"
+
+outfit "30in Containers"
+	plural "30in Containers"
+	category "Ammunition"
+	cost 100000
+	thumbnail "outfit/bullet storage"
+	"mass" 5
+	"outfit space" -10
+	"30in round capacity" 300
+	ammo "30in Round"
+	description "Used to store 18 inch rounds."
+
+outfit "30in Kinetic Turret"
+	category "Turrets"
+	cost 200000
+	thumbnail "outfit/gat turret"
+	"mass" 20
+	"outfit space" -30
+	"weapon capacity" -30
+	"turret mounts" -1
+	"required crew" 1
+	"30in round capacity" 50
+	weapon
+		sound "gatling"
+		sprite "projectile/tinyflare"
+			"random start frame"
+		"hardpoint sprite" "hardpoint/single 30in"
+		"submunition" "30inbullet"
+			"offset" 0 -6
+		ammo "30in Round" 1
+		"inaccuracy" 2
+		"turret turn" 3
+		"velocity" 16
+		"lifetime" 1
+		"reload" 60
+		"firing energy" 18
+		"firing heat" 50
+		"stream"
+		"hit effect" "bullet impact"
+	description `The standard weapon of the Imperial spacecraft.`
+
+outfit "30in Kinetic Turret Double"
+	category "Turrets"
+	cost 500000
+	thumbnail "outfit/gat turret"
+	"mass" 25
+	"outfit space" -70
+	"weapon capacity" -70
+	"turret mounts" -1
+	"required crew" 1
+	"30in round capacity" 50
+	weapon
+		sound "gatling"
+		sprite "projectile/tinyflare"
+			"random start frame"
+		"hardpoint sprite" "hardpoint/dual 30in"
+		"submunition" "30inbullet"
+			"offset" 0 -6
+		ammo "30in Round" 1
+		"inaccuracy" 2
+		"turret turn" 3
+		"velocity" 16
+		"lifetime" 1
+		"reload" 45
+		"firing energy" 18
+		"firing heat" 50
+		"stream"
+		"hit effect" "bullet impact"
+	description `The standard weapon of the Imperial spacecraft.`
+
+outfit "30in Kinetic Turret Triple"
+	category "Turrets"
+	cost 1000000
+	thumbnail "outfit/gat turret"
+	"mass" 30
+	"outfit space" -105
+	"weapon capacity" -105
+	"turret mounts" -1
+	"required crew" 1
+	"30in round capacity" 50
+	weapon
+		sound "gatling"
+		sprite "projectile/tinyflare"
+			"random start frame"
+		"hardpoint sprite" "hardpoint/triple 30in"
+		"submunition" "30inbullet"
+			"offset" 0 -6
+		ammo "30in Round" 1
+		"inaccuracy" 2
+		"turret turn" 3
+		"velocity" 16
+		"lifetime" 1
+		"reload" 20
+		"firing energy" 18
+		"firing heat" 50
+		"stream"
+		"hit effect" "bullet impact"
+	description `The standard weapon of the Imperial spacecraft.`
+
+
+
+
+outfit "Railgun Round"
+	category "Ammunition"
+	cost 1000
+	thumbnail "outfit/railslug"
+	"mass" 0.01
+	"railgun round capacity" -1
+	description "This is is a projectile used in the devastating Imperial Railguns."
+
+outfit "Railgun Round Rack"
+	category "Ammunition"
+	cost 1000000
+	thumbnail "outfit/railslug rack"
+	"mass" 1
+	"outfit space" -5
+	"railgun round capacity" 10
+	ammo "Railgun Round"
+	description "This railgun round rack is used to store and load extra Railgun ammunition."
+
+outfit "M1 Railgun"
+	category "Secondary Weapons"
+	cost 1000000
+	thumbnail "outfit/railgun"
+	"mass" 1
+	"outfit space" -50
+	"weapon capacity" -50
+	"gun ports" -1
+	"railgun round capacity" 15
+	"required crew" 5
+	weapon
+		sprite "projectile/rail slug"
+			"frame rate" 30
+		ammo "Railgun Round"
+		icon "icon/rail gun"
+		sound "ion impact"
+		"fire effect" "rail sparks"
+		"hit effect" "bullet impact"
+		"inaccuracy" 1
+		"velocity" 50
+		"lifetime" 1
+		"reload" 300
+		"firing energy" 6000
+		"firing heat" 5000
+		"firing force" 2000
+		"stream"
+		"submunition" "rbullet" 1
+	description `Only used in the capital ships of the Imperial fleets.`
+
+outfit "rbullet"
+	weapon
+		sprite "projectile/rail slug"
+			"frame rate" 30
+		"hit effect" "bullet impact"
+		"lifetime" 50
+		"acceleration" 2.2
+		"drag" .05
+		"homing" 0
+		"shield damage" 500
+		"hull damage" 10000
+		"hit force" 100
+
+effect "rail sparks"
+	sprite "effect/railspark"
+		"random start frame"
+		"frame rate" 30
+		"rewind"
+	"lifetime" 6
+	"random angle" 360
+	"random spin" 30
+	"velocity scale" 1.2
+
+
+
+
+
+
+
+outfit "M1 Hurricane Torpedo"
+	category "Ammunition"
+	cost 2000
+	thumbnail "outfit/meteor"
+	"mass" .5
+	"m1 hurricane capacity" -1
+	description "The M1 Hurricane Torpedo as ammunition for the Hurricane Torpedo Launcher. Each missile launcher has its own capacity; you cannot install missiles if you have not first purchased a pod, launcher, or storage to store them in."
+
+outfit "M1 Hurricane Torpedo Box"
+	plural "M1 Hurricane Torpedo Boxes"
+	category "Ammunition"
+	cost 10000
+	thumbnail "outfit/meteor storage"
+	"mass" 5
+	"outfit space" -10
+	"m1 hurricane capacity" 20
+	ammo "M1 Hurricane Torpedo"
+	description "The M1 Hurricane Torpedo Box is used to store extra ammunition for M1 Hurricane Torpedo Launchers."
+
+outfit "M1 Hurricane Launcher"
+	category "Secondary Weapons"
+	cost 100000
+	thumbnail "outfit/meteor launcher"
+	"mass" 10
+	"outfit space" -25
+	"weapon capacity" -25
+	"gun ports" -1
+	"m1 hurricane capacity" 15
+	weapon
+		sprite "projectile/meteor"
+			"no repeat"
+			"frame rate" .25
+		sound "meteor"
+		ammo "M1 Hurricane Torpedo"
+		icon "icon/meteor"
+		"fire effect" "meteor fire"
+		"die effect" "missile death"
+		"hit effect" "missile hit"
+		"inaccuracy" 5
+		"velocity" 11
+		"lifetime" 400
+		"reload" 50
+		"firing energy" 5
+		"firing heat" 80
+		"acceleration" 1
+		"drag" .1
+		"turn" 5
+		"homing" 3
+		"infrared tracking" .70
+		"shield damage" 1000
+		"hull damage" 2500
+		"hit force" 50
+		"missile strength" 15
+		"stream"
+	description "The M1 Hurricane Torpedo is the primary long range weapon available in human space. M1 Hurricane Torpedoes are quickly destroyed by anti-missile systems, and their infrared tracking systems have trouble homing in on targets with low heat levels, but they are equipped with warheads that can cripple even the largest ships."
+
+
+effect "meteor fire"
+	sprite "effect/meteor fire"
+		"no repeat"
+		"frame rate" 30
+	"lifetime" 12
+	"random velocity" 10
+

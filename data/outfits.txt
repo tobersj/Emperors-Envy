@@ -1,0 +1,10 @@
+outfit "Slipdrive"
+	category "Systems"
+	cost 90000
+	thumbnail "outfit/scram drive"
+	"mass" 30
+	"outfit space" -20
+	"scram drive" .2
+	"jump fuel" 100
+	"hyperdrive" 1
+	description "The slipdrive allows FTL travel for ships when they are aligned with gravitational slipstream that connect stars. The slipdrive uses explosions from nuclear fission to propel the ship "down" the slipstream, and through to the star on the other side."

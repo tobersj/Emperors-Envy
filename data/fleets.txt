@@ -1,0 +1,262 @@
+fleet "Small Imperial Fleet"
+	government "Rexus (Imperial)"
+	names "civilian"
+	cargo 1
+	personality
+		confusion 15
+		heroic
+	variant 15
+		"Transport"
+	variant 15
+		"Cargo"
+	variant 10
+		"Transport"
+		"Transport"
+	variant 10
+		"Cargo"
+		"Cargo"
+	variant 10
+		"Light Warship"
+
+fleet "Medium Imperial Fleet"
+	government "Rexus (Imperial)"
+	names "civilian"
+	cargo 1
+	personality
+		confusion 15
+		heroic
+	variant 15
+		"Light Warship"
+		"Transport"
+	variant 15
+		"Light Warship"
+		"Cargo"
+	variant 10
+		"Light Warship"
+		"Transport"
+		"Transport"
+	variant 10
+		"Light Warship"
+		"Cargo"
+		"Cargo"
+	variant 5
+		"Light Warship"
+		"Light Warship"
+	variant 5
+		"Medium Warship"
+
+fleet "Large Imperial Fleet"
+	government "Rexus (Imperial)"
+	names "civilian"
+	cargo 1
+	personality
+		confusion 15
+		heroic
+	variant 15
+		"Light Warship"
+		"Light Warship"
+		"Transport"
+	variant 15
+		"Light Warship"
+		"Cargo"
+		"Cargo"
+		"Cargo"
+		"Transport"
+	variant 10
+		"Medium Warship"
+		"Cargo"
+		"Cargo"
+	variant 10
+		"Light Warship"
+		"Medium Warship"
+		"Cargo"
+	variant 5
+		"Heavy Warship"
+	variant 5
+		"Medium Warship"
+		"Medium Warship"
+	variant 5
+		"Light Warship"
+		"Light Warship"
+		"Light Warship"
+		"Light Warship"
+	variant 5
+		"Heavy Warship"
+		"Transport"
+
+
+
+fleet "Small Junta Fleet"
+	government "Rexus (Junta)"
+	names "civilian"
+	cargo 1
+	personality
+		confusion 15
+		heroic
+	variant 15
+		"Transport"
+	variant 15
+		"Cargo"
+	variant 10
+		"Transport"
+		"Transport"
+	variant 10
+		"Cargo"
+		"Cargo"
+	variant 10
+		"Light Warship"
+
+fleet "Medium Junta Fleet"
+	government "Rexus (Junta)"
+	names "civilian"
+	cargo 1
+	personality
+		confusion 15
+		heroic
+	variant 15
+		"Light Warship"
+		"Transport"
+	variant 15
+		"Light Warship"
+		"Cargo"
+	variant 10
+		"Light Warship"
+		"Transport"
+		"Transport"
+	variant 10
+		"Light Warship"
+		"Cargo"
+		"Cargo"
+	variant 5
+		"Light Warship"
+		"Light Warship"
+	variant 5
+		"Medium Warship"
+
+fleet "Large Junta Fleet"
+	government "Rexus (Junta)"
+	names "civilian"
+	cargo 1
+	personality
+		confusion 15
+		heroic
+	variant 15
+		"Light Warship"
+		"Light Warship"
+		"Transport"
+	variant 15
+		"Light Warship"
+		"Cargo"
+		"Cargo"
+		"Cargo"
+		"Transport"
+	variant 10
+		"Medium Warship"
+		"Cargo"
+		"Cargo"
+	variant 10
+		"Light Warship"
+		"Medium Warship"
+		"Cargo"
+	variant 5
+		"Heavy Warship"
+	variant 5
+		"Medium Warship"
+		"Medium Warship"
+	variant 5
+		"Light Warship"
+		"Light Warship"
+		"Light Warship"
+		"Light Warship"
+	variant 5
+		"Heavy Warship"
+		"Transport"
+
+
+
+
+fleet "Small Raider Fleet"
+	government "Raider"
+	names "civilian"
+	cargo 1
+	personality
+		confusion 15
+		heroic
+	variant 15
+		"Transport"
+	variant 15
+		"Cargo"
+	variant 10
+		"Transport"
+		"Transport"
+	variant 10
+		"Cargo"
+		"Cargo"
+	variant 10
+		"Light Warship"
+
+fleet "Medium Raider Fleet"
+	government "Raider"
+	names "civilian"
+	cargo 1
+	personality
+		confusion 15
+		heroic
+	variant 15
+		"Light Warship"
+		"Transport"
+	variant 15
+		"Light Warship"
+		"Cargo"
+	variant 10
+		"Light Warship"
+		"Transport"
+		"Transport"
+	variant 10
+		"Light Warship"
+		"Cargo"
+		"Cargo"
+	variant 5
+		"Light Warship"
+		"Light Warship"
+	variant 5
+		"Medium Warship"
+
+fleet "Large Raider Fleet"
+	government "Raider"
+	names "civilian"
+	cargo 1
+	personality
+		confusion 15
+		heroic
+	variant 15
+		"Light Warship"
+		"Light Warship"
+		"Transport"
+	variant 15
+		"Light Warship"
+		"Cargo"
+		"Cargo"
+		"Cargo"
+		"Transport"
+	variant 10
+		"Medium Warship"
+		"Cargo"
+		"Cargo"
+	variant 10
+		"Light Warship"
+		"Medium Warship"
+		"Cargo"
+	variant 5
+		"Heavy Warship"
+	variant 5
+		"Medium Warship"
+		"Medium Warship"
+	variant 5
+		"Light Warship"
+		"Light Warship"
+		"Light Warship"
+		"Light Warship"
+	variant 5
+		"Heavy Warship"
+		"Transport"

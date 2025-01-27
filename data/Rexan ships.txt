@@ -1,0 +1,368 @@
+ship "Cargo"
+	sprite "ship/cargo"
+	thumbnail "thumbnail/cargo"
+	attributes
+		category "Light Freighter"
+		"cost" 50000
+		"shields" 0
+		"hull" 10000
+		"required crew" 15
+		"bunks" 30
+		"mass" 420
+		"drag" 8
+		"heat dissipation" .74
+		"fuel capacity" 600
+		"cargo space" 1000
+		"outfit space" 400
+		"weapon capacity" 110
+		"engine capacity" 100
+		weapon
+			"blast radius" 24
+			"shield damage" 240
+			"hull damage" 120
+			"hit force" 360
+	outfits
+		"18in Kinetic Turret" 3
+		"18in Round" 300
+
+		"NT-200 Nucleovoltaic"
+		"KP-6 Photovoltaic Panel" 2
+		"LP072a Battery Pack"
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
+
+	turret 0 -65
+	turret 0 -8
+	turret 0 25
+	engine -12.5 112.5
+	engine 12.5 112.5
+	leak "leak" 50 50
+	leak "flame" 50 80
+	leak "big leak" 90 30
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "large explosion" 10
+	"final explode" "final explosion medium"
+	description "Spacecraft designed by the Imperial Yards to transport cargo."
+
+
+ship "Transport"
+	sprite "ship/transport"
+	thumbnail "thumbnail/transport"
+	attributes
+		category "Transport"
+		"cost" 25000
+		"shields" 0
+		"hull" 5000
+		"required crew" 5
+		"bunks" 15
+		"mass" 200
+		"drag" 5
+		"heat dissipation" .8
+		"fuel capacity" 800
+		"cargo space" 100
+		"outfit space" 200
+		"weapon capacity" 50
+		"engine capacity" 100
+		weapon
+			"blast radius" 24
+			"shield damage" 240
+			"hull damage" 120
+			"hit force" 360
+	outfits
+		"18in Kinetic Turret"
+		"18in Round" 100
+
+		"NT-200 Nucleovoltaic"
+		"KP-6 Photovoltaic Panel" 2
+		"LP072a Battery Pack"
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
+
+	turret 0 -23.5
+	engine -11 94.5
+	engine 11 94.5
+	leak "leak" 50 50
+	leak "flame" 50 80
+	leak "big leak" 90 30
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "large explosion" 10
+	"final explode" "final explosion small"
+	description "Most basic spacecraft designed by the Imperial Yard."
+
+
+ship "Light Warship"
+	sprite "ship/light warship"
+	thumbnail "thumbnail/light warship"
+	attributes
+		category "Light Warship"
+		"cost" 10000000
+		"shields" 0
+		"hull" 40000
+		"required crew" 60
+		"bunks" 100
+		"mass" 900
+		"drag" 16
+		"heat dissipation" .3
+		"fuel capacity" 600
+		"cargo space" 75
+		"outfit space" 650
+		"weapon capacity" 300
+		"engine capacity" 200
+		weapon
+			"blast radius" 210
+			"shield damage" 2200
+			"hull damage" 1150
+			"hit force" 3500
+	outfits
+		"22in Kinetic Turret" 3
+		"22in Round" 300
+		"10in Point Defence" 2
+		"10in Round" 400
+		"M1 Railgun"
+		"Railgun Round" 15
+		"M1 Hurricane Launcher" 2
+		"M1 Hurricane Torpedo" 10
+
+		"Fusion Reactor"
+		"LP288a Battery Pack"
+		"Liquid Nitrogen Cooler"
+		"Laser Rifle" 20
+		"Fragmentation Grenades" 20
+		"Security Station"
+		"Tactical Scanner"
+
+		"X4700 Ion Thruster"
+		"X4200 Ion Steering"
+		"Hyperdrive"
+
+	gun 0 -105 "M1 Railgun"
+	gun -18 0 "M1 Hurricane Launcher"
+		"angle" -30
+	gun 18 0 "M1 Hurricane Launcher"
+		"angle" 30
+	turret 0 -55.5 "22in Kinetic Turret"
+	turret -8.5 -22 "10in Point Defence"
+	turret 8.5 -22 "10in Point Defence"
+	turret 0 50 "22in Kinetic Turret"
+	turret 0 82.5 "22in Kinetic Turret"
+	engine -12 109
+	engine 12 109
+	leak "leak" 30 50
+	leak "flame" 30 80
+	leak "big leak" 30 30
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "Light Warship."
+
+
+ship "Medium Warship"
+	sprite "ship/medium warship"
+	thumbnail "thumbnail/medium warship"
+	attributes
+		category "Medium Warship"
+		"cost" 11200000
+		"shields" 0
+		"hull" 50000
+		"required crew" 75
+		"bunks" 150
+		"mass" 1210
+		"drag" 18.7
+		"heat dissipation" .25
+		"fuel capacity" 600
+		"cargo space" 60
+		"outfit space" 760
+		"weapon capacity" 400
+		"engine capacity" 200
+		weapon
+			"blast radius" 260
+			"shield damage" 2600
+			"hull damage" 1300
+			"hit force" 3900
+	outfits
+		"22in Kinetic Turret" 4
+		"22in Round" 400
+		"10in Point Defence" 3
+		"10in Round" 600
+		"M1 Railgun"
+		"Railgun Round" 15
+		"M1 Hurricane Launcher" 2
+		"M1 Hurricane Torpedo" 10
+
+		"Fusion Reactor"
+		"LP288a Battery Pack"
+		"Liquid Nitrogen Cooler"
+		"Laser Rifle" 20
+		"Fragmentation Grenades" 20
+		"Security Station"
+		"Tactical Scanner"
+		
+		"X4700 Ion Thruster"
+		"X4200 Ion Steering"
+		"Hyperdrive"
+		
+	gun 0 -126.5 "M1 Railgun"
+	gun -25 30 "M1 Hurricane Launcher"
+		"angle" -45
+	gun 25 30 "M1 Hurricane Launcher"
+		"angle" 45
+	turret 0 -77 "10in Point Defence"
+	turret -8.5 -55.5 "22in Kinetic Turret"
+	turret 8.5 -55.5 "22in Kinetic Turret"
+	turret 0 4 "10in Point Defence"
+	turret -9 74.5 "22in Kinetic Turret"
+	turret 9 74.5 "22in Kinetic Turret"
+	turret 0 96 "10in Point Defence"
+	engine 12 130
+	engine -12 130
+	leak "leak" 30 50
+	leak "flame" 50 80
+	leak "big leak" 40 30
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "Medium Warship."
+
+
+ship "Heavy Warship"
+	sprite "ship/heavy warship"
+	thumbnail "thumbnail/heavy warship"
+	attributes
+		category "Heavy Warship"
+		"cost" 23000000
+		"shields" 0
+		"hull" 80000
+		"required crew" 130
+		"bunks" 200
+		"mass" 1500
+		"drag" 18.7
+		"heat dissipation" .3
+		"fuel capacity" 600
+		"cargo space" 70
+		"outfit space" 1100
+		"weapon capacity" 700
+		"engine capacity" 250
+		weapon
+			"blast radius" 260
+			"shield damage" 2600
+			"hull damage" 1300
+			"hit force" 3900
+	outfits
+		"30in Kinetic Turret" 4
+		"30in Round" 1200
+		"10in Point Defence" 6
+		"10in Round" 1200
+		"M1 Railgun" 2
+		"Railgun Round" 30
+		"M1 Hurricane Launcher" 4
+		"M1 Hurricane Torpedo" 60
+
+		"Fusion Reactor"
+		"LP288a Battery Pack"
+		"Liquid Nitrogen Cooler"
+		"Laser Rifle" 20
+		"Fragmentation Grenades" 20
+		"Security Station"
+		"Tactical Scanner"
+		
+		"X4700 Ion Thruster"
+		"X4200 Ion Steering"
+		"Hyperdrive"
+		
+	gun -3 -144.5 "M1 Railgun"
+		"parallel"
+	gun 3 -144.5 "M1 Railgun"
+		"parallel"
+	gun -27 18 "M1 Hurricane Launcher"
+		"angle" -30
+	gun 27 18 "M1 Hurricane Launcher"
+		"angle" 30
+	gun -29.5 35 "M1 Hurricane Launcher"
+		"angle" -45
+	gun 29.5 35 "M1 Hurricane Launcher"
+		"angle" 45
+	turret -18 -102 "30in Kinetic Turret"
+	turret 18 -102 "30in Kinetic Turret"
+	turret -13 -74 "10in Point Defence"
+	turret 13.5 -74 "10in Point Defence"
+	turret -13 -1 "10in Point Defence"
+	turret 13 -1.5 "10in Point Defence"
+	turret -18 83 "30in Kinetic Turret"
+	turret 18 83 "30in Kinetic Turret"
+	turret -13 110.5 "10in Point Defence"
+	turret 13 110.5 "10in Point Defence"
+	engine -16.5 147.5
+	engine 16.5 147.5
+	leak "leak" 30 50
+	leak "flame" 50 80
+	leak "big leak" 40 30
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "Heavy Warship."
+
+
+
+ship "Heavy Warship" "Attack"
+	outfits
+		"30in Kinetic Turret" 8
+		"30in Round" 2400
+		"10in Point Defence" 2
+		"10in Round" 400
+		"M1 Railgun" 2
+		"Railgun Round" 30
+		"M1 Hurricane Launcher" 4
+		"M1 Hurricane Torpedo" 60
+
+		"Fusion Reactor"
+		"LP288a Battery Pack"
+		"Liquid Nitrogen Cooler"
+		"Laser Rifle" 20
+		"Fragmentation Grenades" 20
+		"Security Station"
+		"Tactical Scanner"
+		
+		"X4700 Ion Thruster"
+		"X4200 Ion Steering"
+		"Hyperdrive"
+	gun -3 -144.5 "M1 Railgun"
+		"parallel"
+	gun 3 -144.5 "M1 Railgun"
+		"parallel"
+	gun -27 18 "M1 Hurricane Launcher"
+		"angle" -30
+	gun 27 18 "M1 Hurricane Launcher"
+		"angle" 30
+	gun -29.5 35 "M1 Hurricane Launcher"
+		"angle" -45
+	gun 29.5 35 "M1 Hurricane Launcher"
+		"angle" 45
+	turret -18 -102 "30in Kinetic Turret"
+	turret 18 -102 "30in Kinetic Turret"
+	turret -13 -74 "30in Kinetic Turret"
+	turret 13.5 -74 "30in Kinetic Turret"
+	turret -13 -1 "10in Point Defence"
+	turret 13 -1.5 "10in Point Defence"
+	turret -18 83 "30in Kinetic Turret"
+	turret 18 83 "30in Kinetic Turret"
+	turret -13 110.5 "30in Kinetic Turret"
+	turret 13 110.5 "30in Kinetic Turret"
+
+
