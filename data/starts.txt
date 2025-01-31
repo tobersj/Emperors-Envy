@@ -1,3 +1,6 @@
+#PROLOGUE STARTS!
+
+
 start "0. Prologue"
 	name "0. Prologue Pre-Alpha"
 	description `This is the story of how the Rexan nation first left her home system...`
@@ -80,6 +83,8 @@ event "pre-alpha settings"
 		fleet "Large Raider Fleet" 600
 
 
+
+#ACT 1 Start
 
 
 

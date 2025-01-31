@@ -3,48 +3,44 @@ ship "Transport" "Transport (prologue)"
 		"18in Kinetic Turret"
 		"18in Round" 100
 
-		"NT-200 Nucleovoltaic"
-		"KP-6 Photovoltaic Panel" 2
-		"LP072a Battery Pack"
+		"M1 Shock Reactor"
+		"Small Battery"
 		
-		"X3700 Ion Thruster"
-		"X3200 Ion Steering"
+		"Hamp-03-S Thruster"		
+		"Hamp-03-S Steering"
 
 ship "Transport" "Transport (heavy prologue)"
 	outfits
 		"22in Kinetic Turret"
 		"22in Round" 100
 
-		"NT-200 Nucleovoltaic"
-		"KP-6 Photovoltaic Panel" 2
-		"LP072a Battery Pack"
+		"M1 Shock Reactor"
+		"Small Battery"
 		
-		"X3700 Ion Thruster"
-		"X3200 Ion Steering"
+		"Hamp-03-S Thruster"		
+		"Hamp-03-S Steering"
 
 ship "Cargo" "Cargo (prologue)"
 	outfits
 		"18in Kinetic Turret" 3
 		"18in Round" 300
 
-		"NT-200 Nucleovoltaic"
-		"KP-6 Photovoltaic Panel" 2
-		"LP072a Battery Pack"
+		"M1 Shock Reactor"
+		"Medium Battery"
 		
-		"X3700 Ion Thruster"
-		"X3200 Ion Steering"
+		"Hamp-03-S Thruster"		
+		"Hamp-03-S Steering"
 
 ship "Cargo" "Cargo (heavy prologue)"
 	outfits
 		"22in Kinetic Turret" 3
 		"22in Round" 300
 
-		"NT-200 Nucleovoltaic"
-		"KP-6 Photovoltaic Panel" 2
-		"LP072a Battery Pack"
+		"M1 Shock Reactor"
+		"Medium Battery"
 		
-		"X3700 Ion Thruster"
-		"X3200 Ion Steering"
+		"Hamp-03-S Thruster"		
+		"Hamp-03-S Steering"
 
 
 fleet "Prologue Imperial Fleet"

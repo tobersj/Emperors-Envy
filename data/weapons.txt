@@ -21,7 +21,7 @@ outfit "10in Containers"
 outfit "10in Point Defence"
 	category "Turrets"
 	cost 20000
-	thumbnail "outfit/anti-missile"
+	thumbnail "outfit/10in"
 	"mass" 7
 	"outfit space" -10
 	"weapon capacity" -10
@@ -82,7 +82,7 @@ outfit "18in Containers"
 outfit "18in Kinetic Turret"
 	category "Turrets"
 	cost 50000
-	thumbnail "outfit/gat turret"
+	thumbnail "outfit/single 18in"
 	"mass" 7
 	"outfit space" -10
 	"weapon capacity" -10
@@ -111,7 +111,7 @@ outfit "18in Kinetic Turret"
 outfit "18in Kinetic Turret Double"
 	category "Turrets"
 	cost 120000
-	thumbnail "outfit/gat turret"
+	thumbnail "outfit/dual 18in"
 	"mass" 15
 	"outfit space" -23
 	"weapon capacity" -23
@@ -140,7 +140,7 @@ outfit "18in Kinetic Turret Double"
 outfit "18in Kinetic Turret Triple"
 	category "Turrets"
 	cost 200000
-	thumbnail "outfit/gat turret"
+	thumbnail "outfit/triple 18in"
 	"mass" 20
 	"outfit space" -35
 	"weapon capacity" -35
@@ -202,7 +202,7 @@ outfit "22in Containers"
 outfit "22in Kinetic Turret"
 	category "Turrets"
 	cost 75000
-	thumbnail "outfit/gat turret"
+	thumbnail "outfit/single 22in"
 	"mass" 15
 	"outfit space" -20
 	"weapon capacity" -20
@@ -231,7 +231,7 @@ outfit "22in Kinetic Turret"
 outfit "22in Kinetic Turret Double"
 	category "Turrets"
 	cost 160000
-	thumbnail "outfit/gat turret"
+	thumbnail "outfit/dual 22in"
 	"mass" 20
 	"outfit space" -45
 	"weapon capacity" -45
@@ -260,7 +260,7 @@ outfit "22in Kinetic Turret Double"
 outfit "22in Kinetic Turret Triple"
 	category "Turrets"
 	cost 250000
-	thumbnail "outfit/gat turret"
+	thumbnail "outfit/triple 22in"
 	"mass" 25
 	"outfit space" -70
 	"weapon capacity" -70
@@ -321,7 +321,7 @@ outfit "30in Containers"
 outfit "30in Kinetic Turret"
 	category "Turrets"
 	cost 200000
-	thumbnail "outfit/gat turret"
+	thumbnail "outfit/single 30in"
 	"mass" 20
 	"outfit space" -30
 	"weapon capacity" -30
@@ -350,7 +350,7 @@ outfit "30in Kinetic Turret"
 outfit "30in Kinetic Turret Double"
 	category "Turrets"
 	cost 500000
-	thumbnail "outfit/gat turret"
+	thumbnail "outfit/dual 30in"
 	"mass" 25
 	"outfit space" -70
 	"weapon capacity" -70
@@ -379,7 +379,7 @@ outfit "30in Kinetic Turret Double"
 outfit "30in Kinetic Turret Triple"
 	category "Turrets"
 	cost 1000000
-	thumbnail "outfit/gat turret"
+	thumbnail "outfit/triple 30in"
 	"mass" 30
 	"outfit space" -105
 	"weapon capacity" -105

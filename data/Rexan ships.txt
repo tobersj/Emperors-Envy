@@ -25,13 +25,12 @@ ship "Cargo"
 		"18in Kinetic Turret" 3
 		"18in Round" 300
 
-		"NT-200 Nucleovoltaic"
-		"KP-6 Photovoltaic Panel" 2
-		"LP072a Battery Pack"
+		"M1 Shock Reactor"
+		"Medium Battery"
 		
-		"X3700 Ion Thruster"
-		"X3200 Ion Steering"
-		"Hyperdrive"
+		"Hamp-03-S Thruster"		
+		"Hamp-03-S Steering"
+		"Slipdrive"
 
 	turret 0 -65
 	turret 0 -8
@@ -62,7 +61,7 @@ ship "Transport"
 		"mass" 200
 		"drag" 5
 		"heat dissipation" .8
-		"fuel capacity" 800
+		"fuel capacity" 600
 		"cargo space" 100
 		"outfit space" 200
 		"weapon capacity" 50
@@ -76,13 +75,12 @@ ship "Transport"
 		"18in Kinetic Turret"
 		"18in Round" 100
 
-		"NT-200 Nucleovoltaic"
-		"KP-6 Photovoltaic Panel" 2
-		"LP072a Battery Pack"
+		"M1 Shock Reactor"
+		"Small Battery"
 		
-		"X3700 Ion Thruster"
-		"X3200 Ion Steering"
-		"Hyperdrive"
+		"Hamp-03-S Thruster"		
+		"Hamp-03-S Steering"
+		"Slipdrive"
 
 	turret 0 -23.5
 	engine -11 94.5
@@ -111,8 +109,8 @@ ship "Light Warship"
 		"mass" 900
 		"drag" 16
 		"heat dissipation" .3
-		"fuel capacity" 600
-		"cargo space" 75
+		"fuel capacity" 700
+		"cargo space" 200
 		"outfit space" 650
 		"weapon capacity" 300
 		"engine capacity" 200
@@ -131,17 +129,19 @@ ship "Light Warship"
 		"M1 Hurricane Launcher" 2
 		"M1 Hurricane Torpedo" 10
 
-		"Fusion Reactor"
-		"LP288a Battery Pack"
+		"M1 Cataclysm Reactor"
+		"Medium Battery"
 		"Liquid Nitrogen Cooler"
-		"Laser Rifle" 20
-		"Fragmentation Grenades" 20
+		"Infantry Flamethrower" 20
+		"Sting Grenades" 20
+		"High Explosive Grenades" 20
 		"Security Station"
 		"Tactical Scanner"
 
-		"X4700 Ion Thruster"
-		"X4200 Ion Steering"
-		"Hyperdrive"
+		"Hamp-03-M Thruster"
+		"Hamp-03-M Steering"
+		"SS-7 Ion Engine System"
+		"Slipdrive"
 
 	gun 0 -105 "M1 Railgun"
 	gun -18 0 "M1 Hurricane Launcher"
@@ -180,8 +180,8 @@ ship "Medium Warship"
 		"mass" 1210
 		"drag" 18.7
 		"heat dissipation" .25
-		"fuel capacity" 600
-		"cargo space" 60
+		"fuel capacity" 700
+		"cargo space" 200
 		"outfit space" 760
 		"weapon capacity" 400
 		"engine capacity" 200
@@ -200,17 +200,19 @@ ship "Medium Warship"
 		"M1 Hurricane Launcher" 2
 		"M1 Hurricane Torpedo" 10
 
-		"Fusion Reactor"
-		"LP288a Battery Pack"
+		"M1 Cataclysm Reactor"
+		"Large Battery"
 		"Liquid Nitrogen Cooler"
-		"Laser Rifle" 20
-		"Fragmentation Grenades" 20
+		"Infantry Flamethrower" 20
+		"Sting Grenades" 20
+		"High Explosive Grenades" 20
 		"Security Station"
 		"Tactical Scanner"
-		
-		"X4700 Ion Thruster"
-		"X4200 Ion Steering"
-		"Hyperdrive"
+
+		"Hamp-03-M Thruster"
+		"Hamp-03-M Steering"
+		"SS-7 Ion Engine System"
+		"Slipdrive"
 		
 	gun 0 -126.5 "M1 Railgun"
 	gun -25 30 "M1 Hurricane Launcher"
@@ -251,8 +253,8 @@ ship "Heavy Warship"
 		"mass" 1500
 		"drag" 18.7
 		"heat dissipation" .3
-		"fuel capacity" 600
-		"cargo space" 70
+		"fuel capacity" 800
+		"cargo space" 200
 		"outfit space" 1100
 		"weapon capacity" 700
 		"engine capacity" 250
@@ -271,17 +273,19 @@ ship "Heavy Warship"
 		"M1 Hurricane Launcher" 4
 		"M1 Hurricane Torpedo" 60
 
-		"Fusion Reactor"
-		"LP288a Battery Pack"
+		"M1 Cataclysm Reactor"
+		"Large Battery"
 		"Liquid Nitrogen Cooler"
-		"Laser Rifle" 20
-		"Fragmentation Grenades" 20
+		"Infantry Flamethrower" 20
+		"Sting Grenades" 20
+		"High Explosive Grenades" 20
 		"Security Station"
 		"Tactical Scanner"
-		
-		"X4700 Ion Thruster"
-		"X4200 Ion Steering"
-		"Hyperdrive"
+
+		"Hamp-03-L Thruster"
+		"Hamp-03-L Steering"
+		"SS-7 Ion Engine System"
+		"Slipdrive"
 		
 	gun -3 -144.5 "M1 Railgun"
 		"parallel"
@@ -320,7 +324,7 @@ ship "Heavy Warship"
 
 
 
-ship "Heavy Warship" "Attack"
+ship "Heavy Warship" "Heavy Warship (Attack)"
 	outfits
 		"30in Kinetic Turret" 8
 		"30in Round" 2400
@@ -331,17 +335,20 @@ ship "Heavy Warship" "Attack"
 		"M1 Hurricane Launcher" 4
 		"M1 Hurricane Torpedo" 60
 
-		"Fusion Reactor"
-		"LP288a Battery Pack"
+		"M1 Cataclysm Reactor"
+		"Large Battery"
 		"Liquid Nitrogen Cooler"
-		"Laser Rifle" 20
-		"Fragmentation Grenades" 20
+		"Infantry Flamethrower" 20
+		"Sting Grenades" 20
+		"High Explosive Grenades" 20
 		"Security Station"
 		"Tactical Scanner"
-		
-		"X4700 Ion Thruster"
-		"X4200 Ion Steering"
-		"Hyperdrive"
+
+		"Hamp-03-L Thruster"
+		"Hamp-03-L Steering"
+		"SS-7 Ion Engine System"
+		"Slipdrive"
+
 	gun -3 -144.5 "M1 Railgun"
 		"parallel"
 	gun 3 -144.5 "M1 Railgun"

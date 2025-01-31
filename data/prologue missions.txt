@@ -223,6 +223,7 @@ mission "Prologue - end"
 			`You begin a steep climb, and break through the atmosphere. 15 minutes pass and soon an explosion shrouds the base in fire and heat. Planetary scans showed signs a seismic shock, and LiDAR scans only show a crater. All receivers are silent.`
 	on enter Korva
 		conversation
+			scene "scene/explosion"
 			`You make it through to the Korva system, and immediately send off a communications drone to Urath. The drone reaches the designated spot to transmit data, and makes contact with Urath. You send a single message, "Information: Urgent", and start transmitting the data you found. But just as the first data line is sent to Urath, something the size of a pebble moving faster than light smashes into the cockpit of your ship, and the last thing you experience is the heat of the explosion.`
 				explode
 

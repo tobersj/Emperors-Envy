@@ -1180,7 +1180,7 @@ planet "Delta Station"
 planet Kawaza
 	attributes factory "near earth" research tourism urban
 	landscape land/lava9
-	description "Kawaza holds great significance in the Rexan mythology, though now it is little more than a barely habitable volcanic planet. It does however have lots of rare metals at relatively shallow depths due to the highly active tectonic system.
+	description "Kawaza holds great significance in the Rexan mythology, though now it is little more than a barely habitable volcanic planet. It does however have lots of rare metals at relatively shallow depths due to the highly active tectonic system."
 	spaceport "The spaceport is located in high orbit due to the hot and dense atmosphere present, making it little more than an ordinary space station. The only way down to the surface is via specially designed atmospheric craft called Lava Hoppers."
 	government Uninhabited
 	bribe 0.03

@@ -8,3 +8,229 @@ outfit "Slipdrive"
 	"jump fuel" 100
 	"hyperdrive" 1
 	description "The slipdrive allows FTL travel for ships when they are aligned with gravitational slipstream that connect stars. The slipdrive uses explosions from nuclear fission to propel the ship "down" the slipstream, and through to the star on the other side."
+
+
+
+outfit "M1 Cataclysm Reactor"
+	category "Power"
+	cost 500000
+	thumbnail "outfit/fission"
+	"mass" 80
+	"outfit space" -80
+	"energy generation" 9
+	"heat generation" 40
+	description "The primary reactor used in Warships."
+
+
+outfit "M1 Shock Reactor"
+	category "Power"
+	cost 300000
+	thumbnail "outfit/dwarf core"
+	"mass" 30
+	"outfit space" -30
+	"energy generation" 4
+	"heat generation" 16
+	description "The primary reactor used in civilian ships."
+
+outfit "Large Battery"
+	plural "Large Batteries"
+	category "Power"
+	cost 54000
+	thumbnail "outfit/large battery"
+	"mass" 50
+	"outfit space" -50
+	"energy capacity" 15000
+	description "This is a large battery pack designed for ships that may occasionally have high power needs but do not want the expense or the heat associated with a more powerful ship's generator."
+
+outfit "Medium Battery"
+	plural "Medium Batteries"
+	category "Power"
+	cost 45000
+	thumbnail "outfit/medium battery"
+	"mass" 40
+	"outfit space" -40
+	"energy capacity" 12000
+	description "This is a medium battery pack designed for ships that may need to push their ship's energy consumption, but do not want the expense or the heat associated with a more powerful ship's generator."
+
+outfit "Small Battery"
+	plural "Small Batteries"
+	category "Power"
+	cost 45000
+	thumbnail "outfit/medium battery"
+	"mass" 25
+	"outfit space" -25
+	"energy capacity" 8000
+	description "This is a small battery pack designed for small, typically civilian, ships that are unlikely to see extended combat, or for larger warships requiring some additional capacity."
+
+
+outfit "Infantry Flamethrower"
+	"display name" "Flamethrower"
+	category "Hand to Hand"
+	cost 10000
+	thumbnail "outfit/infantry flamethrower"
+	"capture attack" .9
+	"capture defense" .6
+	"unplunderable" 1
+	description "While kinetic munitions can cause catastrophic damage to the structure of a ship, flamethrowers are a critical force multiplier in ground combat and ship-to-ship action."
+
+
+outfit "High Explosive Grenades"
+	plural "High Explosive  Grenades"
+	category "Hand to Hand"
+	cost 15000
+	thumbnail "outfit/fragmentation grenades"
+	"capture attack" 1.5
+	"capture defense" .3
+	"unplunderable" 1
+	description "High explosive grenades are most effective in confined spaces as the concussion caused is most lethal. In ships surrounded where soldiers and crew are only in confined spaces, the metal walls act as a force multiplier. These are most effective in offensive action."
+
+outfit "Sting Grenades"
+	plural "Sting  Grenades"
+	category "Hand to Hand"
+	cost 15000
+	thumbnail "outfit/fragmentation grenades"
+	"capture attack" .7
+	"capture defense" .7
+	"unplunderable" 1
+	description "Sting grenades use a similar design to fragmentation grenades, however their hard rubber casings make them usable against enemy combatants without damaging the crew. This makes them not only usable in boarding action, but they are also very effective when used in defence."
+
+outfit "Incendiary Grenades"
+	plural "Incendiary  Grenades"
+	category "Hand to Hand"
+	cost 32500
+	thumbnail "outfit/fragmentation grenades"
+	"capture attack" 0.6
+	"capture defense" 1.3
+	"unplunderable" 1
+	description "Incendiary grenades are used to block off attack vectors, this means that while they are an effective weapon while used offensively, they are most commonly used in desperate defences."
+
+
+
+outfit "SS-7 Ion Engine System"
+	category "Engines"
+	"cost" 70000
+	thumbnail "outfit/afterburner"
+	"mass" 10
+	"outfit space" -10
+	"engine capacity" -10
+	"afterburner thrust" 40.65
+	"afterburner energy" 25
+	"afterburner heat" 10.0
+	"afterburner effect" "afterburner"
+	description `While the most common type of engines in Rexan ships use liquid fuel, ion engines have been developed that feed off of the power generated from the ship's energy supply. This means that if a ship runs out of fuel, it can still return to the nearest refuelling station.`
+
+
+outfit "Hamp-03-S Thruster"
+	category "Engines"
+	"cost" 45000
+	thumbnail "outfit/small plasma thruster"
+	"mass" 34
+	"outfit space" -30
+	"engine capacity" -30
+	"thrust" 62
+	"thrusting energy" 3
+	"thrusting heat" 7
+	"thrusting fuel" 0.05
+	"reverse thrust" 62
+	"reverse thrusting energy" 3
+	"reverse thrusting heat" 7
+	"reverse thrusting fuel" 0.05
+	"flare sprite" "effect/plasma flare/small"
+		"frame rate" 6
+	"flare sound" "plasma small"
+	description "This thruster is intended for small ships and for freighters. It comes in a crate decorated with a stylized cartoon of a fly swan. Due to the complex manoeuvres space combat requires, the Hamp-03 systems also have reverse thrust capabilities."
+	description "	Liquid-fuel engines are more powerful than the largest ion engines, but they use the ship's fuel and produce more heat."
+
+outfit "Hamp-03-M Thruster"
+	"cost" 99000
+	thumbnail "outfit/medium plasma thruster"
+	"mass" 52
+	"outfit space" -52
+	"engine capacity" -52
+	"thrust" 123
+	"thrusting energy" 6
+	"thrusting heat" 14
+	"thrusting fuel" 0.08
+	"reverse thrust" 123
+	"reverse thrusting energy" 6
+	"reverse thrusting heat" 14
+	"reverse thrusting fuel" 0.08
+	"flare sprite" "effect/plasma flare/medium"
+		"frame rate" 7
+	"flare sound" "plasma medium"
+	description "Hamp-03-M class thrusters produce a significant amount of force, and are suitable for smaller warships. But, your ship may need extra cooling systems in order to handle them. Due to the complex manoeuvres space combat requires, the Hamp-03 systems also have reverse thrust capabilities."
+	description "	Liquid-fuel engines are more powerful than the largest ion engines, but they use the ship's fuel and produce more heat."
+
+outfit "Hamp-03-L Thruster"
+	category "Engines"
+	"cost" 217000
+	thumbnail "outfit/large plasma thruster"
+	"mass" 98
+	"outfit space" -98
+	"engine capacity" -98
+	"thrust" 200
+	"thrusting energy" 8
+	"thrusting heat" 26
+	"thrusting fuel" 0.1
+	"reverse thrust" 200
+	"reverse thrusting energy" 8
+	"reverse thrusting heat" 26
+	"reverse thrusting fuel" 0.1
+	"flare sprite" "effect/plasma flare/large"
+		"frame rate" 8
+	"flare sound" "plasma large"
+	description "This engine used enough fuel that a ship with out sufficient fuel tanks is unlikely to be able to use it, but the thrust it generates is impressive. Due to the complex manoeuvres space combat requires, the Hamp-03 systems also have reverse thrust capabilities."
+	description "	Liquid-fuel engines are more powerful than the largest ion engines, but they use the ship's fuel and produce more heat."
+
+
+outfit "Hamp-03-S Steering"
+	category "Engines"
+	"cost" 36000
+	thumbnail "outfit/small plasma steering"
+	"mass" 26
+	"outfit space" -26
+	"engine capacity" -26
+	"turn" 1085
+	"turning energy" 0.9
+	"turning heat" 2.1
+	"steering flare sprite" "effect/plasma flare/small"
+		"frame rate" 6
+	"steering flare sound" "plasma small"
+	description "The Hamp-03-S class liquid-fuel propulsion systems are very versatile,, suitable for a wide range of civilian starships."
+	description "	Liquid-fuel engines are more powerful than the largest ion engines, but they use the ship's fuel and produce more heat."
+
+outfit "Hamp-03-M Steering"
+	category "Engines"
+	series "Human: Plasma"
+	index 32
+	"cost" 79000
+	thumbnail "outfit/medium plasma steering"
+	"mass" 43
+	"outfit space" -43
+	"engine capacity" -43
+	"turn" 1899.5
+	"turning energy" 1.6
+	"turning heat" 4.1
+	"steering flare sprite" "effect/plasma flare/medium"
+		"frame rate" 7
+	"steering flare sound" "plasma medium"
+	description "Hamp-03-M class liquid-fuel steering systems are suitable for most freighters and all but the largest warships."
+	description "	Liquid-fuel engines are more powerful than the largest ion engines, but they use the ship's fuel and produce more heat."
+
+outfit "Hamp-03-L Steering"
+	category "Engines"
+	series "Human: Plasma"
+	index 42
+	"cost" 174000
+	thumbnail "outfit/large plasma steering"
+	"mass" 74
+	"outfit space" -74
+	"engine capacity" -74
+	"turn" 3987.5
+	"turning energy" 2.9
+	"turning heat" 7.7
+	"steering flare sprite" "effect/plasma flare/large"
+		"frame rate" 8
+	"steering flare sound" "plasma large"
+	description "The Hamp-03-L class steering system will allow any mid-sized ship to turn as quickly as a fighter, and is powerful enough to serve even the largest of warships."
+	description "	Liquid-fuel engines are more powerful than the largest ion engines, but they use the ship's fuel and produce more heat."
